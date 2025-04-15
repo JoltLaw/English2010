@@ -7,6 +7,7 @@ const Info_Container = document.createElement("div")
 // Landing Image Elements
 const Landing_Image_Container = document.createElement("div")
 Landing_Image_Container.classList = "Landing_Image"
+Landing_Image_Container.style.backgroundImage = "Url(assets/photos/basement_TV.jpg)"
 const Image_Overlay = document.createElement("h1")
 Image_Overlay.textContent = "Disconnect"
 Image_Overlay.classList = "Image_Overlay"
@@ -65,6 +66,7 @@ Info_Two.append(Info_Two_Image,Info_Two_Txt_Container)
 
 // Call To Action Elements
 const Call_To_Action_Container = document.createElement("Form")
+Call_To_Action_Container.style.backgroundImage = "Url(assets/photos/CTA_Disconnect_Modifed.png)"
 Call_To_Action_Container.classList = "Call_To_Action_Form"
 const Call_To_Action_Input = document.createElement("input")
 Call_To_Action_Input.type = "Email"
