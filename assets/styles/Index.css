@@ -112,7 +112,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image:url(../assets/photos/basement_TV.jpg);
+    background-image:url(basement_TV.jpg);
     background-size: 100%;
 }
 
@@ -185,7 +185,7 @@ width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../assets/photos/CTA_Disconnect_Modifed.png);
+    background-image: url(CTA_Disconnect_Modifed.png);
     background-size: 100%;
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 400;
