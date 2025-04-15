@@ -20,7 +20,8 @@
             {text: "\"Place Holder 8\"", from: "-Null"},
             {text: "\"Place Holder 9\"", from: "-Null"},
         ];
-    Qoute_Index = Math.floor(Math.random() * 10)
+    Qoute_Index = 0;
+    //  Math.floor(Math.random() * 10)
 
 Qoute.textContent = Quotes_Array[Qoute_Index].text;
 Cite.textContent = Quotes_Array[Qoute_Index].from;
