@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+:root {
+    --Green: lime;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 64.4%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* General Styling */
+
+.screen {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.credit_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Green);
+    font-size: 3rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    width: 80vw;
+    background-size: 100%;
+    border-radius: 2.4rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.credit_container span {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+.credit_container a {
+    color: var(--Green);
+}
+
+.credit_container a:hover {
+    color: black;
+    background-color: var(--Green);
+    transition: .75s;
+} 
+
+#Reagan_Freeman_Container {
+    background-image: url(/assets/photos/basement_TV.jpg);
+}
+
+#Fran_Jacquier_Container {
+    background-image: url(/assets/photos/Info_Image_One.jpg);
+}
+
+#Dodi_Achmad_Container {
+    background-image: url(/assets/photos/Info_Image_Two.jpg);
+}
+
+#Vertex_Designs_Container {
+    background-image: url(/assets/photos/CTA_Disconnect_Modifed.png);
+}
+
+
+@media screen and (width < 1200px) {
+    
+    .credit_container span {
+        font-size: 2rem;
+    }
+}

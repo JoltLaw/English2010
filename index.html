@@ -7,12 +7,29 @@
     <title>Disconnet</title>
 </head>
 <body>
-
+    <div class="modal" id="modal">
+        <div class="dialogBox">
+            <h4 class="errorMessage">Error: X(</h4>
+            <p class="errorReport">Something went wrong...
+                An error occured while trying to run the requested functionality.</p>
+            <button class="closeBtn" onclick="Toggle_Modal()">Ok</button>
+        </div>
+    </div>
     <div class="screen" id="screen">
     </div>
+    <script src="./assets/scripts/Modal.js"></script>
     <script src="./assets/scripts/pages/info.js"></script>
     <script src="./assets//scripts/pages/qoutes.js"></script>
     <script src="./assets/scripts/pages/landing.js"></script>
     <script src="./assets/scripts/Index.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MFCRTYK5MF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MFCRTYK5MF');
+</script>
 </body>
 </html>

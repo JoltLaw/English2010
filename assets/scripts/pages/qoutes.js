@@ -9,19 +9,18 @@
 
     // Variables 
     Quotes_Array = [
-        {text: "\"All Art is Propaganda\"", from: "-George Orwell"},
-         {text: "\"Place Holder 1\"", from: "-Null"},
-          {text: "\"Place Holder 2\"", from: "-Null"},
-           {text: "\"Place Holder 3\"", from: "-Null"},
+        {text: "\"All Art is Propaganda\"", from: "―George Orwell"},
+         {text: "\“But if thought corrupts language, language can also corrupt thought.\"", from: "―George Orwell"},
+          {text: "\"Propaganda is to a democracy what the bludgeon is to a totalitarian state.\"", from: "-Noam Chomsky"},
+            {text: "\"You can sway a thousand men by appealing to their prejudices quicker than you can convince one man by logic.\"", from: "-Robert A. Heinlein"},
+            {text: "\"Those who are capable of tyranny are capable of perjury to sustain it.\"", from: "-Lysander Spooner"},
+            {text: "\"The American people are free to do exactly what they are told.\"", from: "-Ward Churchill"},
+            {text: "\"Place Holder 1\"", from: "-Null"},
+            {text: "\"Place Holder 2\"", from: "-Null"},
+            {text: "\"Place Holder 3\"", from: "-Null"},
             {text: "\"Place Holder 4\"", from: "-Null"},
-            {text: "\"Place Holder 5\"", from: "-Null"},
-            {text: "\"Place Holder 6\"", from: "-Null"},
-            {text: "\"Place Holder 7\"", from: "-Null"},
-            {text: "\"Place Holder 8\"", from: "-Null"},
-            {text: "\"Place Holder 9\"", from: "-Null"},
         ];
-    Qoute_Index = 0;
-    //  Math.floor(Math.random() * 10)
+    Qoute_Index = Math.floor(Math.random() * 6); 
 
 Qoute.textContent = Quotes_Array[Qoute_Index].text;
 Cite.textContent = Quotes_Array[Qoute_Index].from;

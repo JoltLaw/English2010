@@ -28,10 +28,10 @@ Info_One_Heading.textContent = "Section 1"
 Info_One_Heading.classList = "Section_Header"
 const Info_One_Para_One = document.createElement("p")
 Info_One_Para_One.classList = "Info_Para"
-Info_One_Para_One.textContent = "Long invisible strings reach down from the puppet masters hands, orchestrating deliberate movements as if it was nothing more than fate. We now find ourselves under the authority of the very devices we once held the remotes too. The unseen hands pulled us in every direction, like toddlers fighting over their prized teddy bear. "
+Info_One_Para_One.textContent = "In the modern era, we find ourselves constantly bombarded by all forms of media. We discuss media literacy and news regularly. Oftentimes, we correlate our ability to decipher messages and our ability to see through misinformation with our intelligence. Despite our boasting of some superior understanding of media, we allow ourselves to be manipulated in our most intimate moments. We devour content that we’ve arbitrarily deemed as entertainment with little to no thought on how it impacts our thoughts. "
 const Info_One_Para_two = document.createElement("p")
 Info_One_Para_two.classList = "Info_Para"
-Info_One_Para_two.textContent = "Victims of our own hubris we gloat our media literacy over those who we view as having less, wearing it like a badge of authority that allows us to belittle those without. Yet we so carelessly consume media deemed as entertainment as though it was nothing more than dust in the wind. Ironically, lowering are guards as if in some sort of safe haven when in all reality we’re most susceptible to influence. And so we happily run to tie the marionette strings around our wrists and ankles, Like an elk anxiously attempting to mount its own antlers on the wall of the hunter. "
+//Info_One_Para_two.textContent = "Victims of our own hubris we gloat our media literacy over those who we view as having less, wearing it like a badge of authority that allows us to belittle those without. Yet we so carelessly consume media deemed as entertainment as though it was nothing more than dust in the wind. Ironically, lowering are guards as if in some sort of safe haven when in all reality we’re most susceptible to influence. And so we happily run to tie the marionette strings around our wrists and ankles, Like an elk anxiously attempting to mount its own antlers on the wall of the hunter. "
 const Info_One_Image = document.createElement("img")
 Info_One_Image.classList = "Inline_Image"
 Info_One_Image.src = "./assets/photos/Info_Image_One.jpg"
@@ -40,7 +40,7 @@ Info_One_Image.src = "./assets/photos/Info_Image_One.jpg"
 // Info_One_Info_Button.classList = "Info_Btn"
 // Appends
 // Info_One_Image.appendChild(Info_One_Info_Button)
-Info_One_Txt_Container.append( Info_One_Para_One, Info_One_Para_two)
+Info_One_Txt_Container.append( Info_One_Para_One)
 Info_One.append(Info_One_Txt_Container, Info_One_Image)
 
 // Infor Section Two Elements
@@ -53,15 +53,15 @@ Info_Two_Heading.textContent = "Section 2";
 Info_Two_Heading.classList = "Section_Header";
 const Info_Two_Para_One = document.createElement("p")
 Info_Two_Para_One.classList = "Info_Para"
-Info_Two_Para_One.textContent = "	Free yourself from the parade of mindless influence you’re subject to. Cut the strings which have bound you for so long. The voices are always saying something, so listen when they speak. Disconnect from mindless consumerism. Just as an athlete is conscious of what they put into their bodies, be conscious of what you allow fortress in your mind. "
+Info_Two_Para_One.textContent = "It is no secret that in recent decades the flood of smart TVs, tablets, and phones has made access to media quicker and easier than ever. We’ve seen the advent and mass adoption of terminology such as “Doom Scrolling” to define this zombie-like state of passive consumption. During the very time that we flex and posture about our media literacy, we allow algorithms and executives to use our emotions and passive consumption like the rains of a horse and pull us in any direction they see fit. "
 const Info_Two_Para_two = document.createElement("p")
 Info_Two_Para_two.classList = "Info_Para Final_Statement"
-Info_Two_Para_two.textContent = "Stay vigilant of what you consume as entertainment, and always be aware. "
+// Info_Two_Para_two.textContent = "Stay vigilant of what you consume as entertainment, and always be aware. "
 const Info_Two_Image = document.createElement("img");
 Info_Two_Image.classList = "Inline_Image"
 Info_Two_Image.src = "./assets/photos/Info_Image_Two.jpg"
 // Appends
-Info_Two_Txt_Container.append( Info_Two_Para_One, Info_Two_Para_two)
+Info_Two_Txt_Container.append( Info_Two_Para_One)
 Info_Two.append(Info_Two_Image,Info_Two_Txt_Container)
 
 // Call To Action Elements
@@ -79,6 +79,12 @@ Join_Btn.classList = "Join_Btn";
 Join_Btn.textContent = "Join"
 // Appends
 Call_To_Action_Container.append(Call_To_Action_Input, Join_Btn)
+
+// Functions
+Call_To_Action_Container.addEventListener("submit", (e) => {
+    e.preventDefault();
+    Toggle_Modal();
+})
 
 // Appending Elements 
 Info_Container.append( Landing_Image_Container, Info_One, Info_Two, Call_To_Action_Container)
