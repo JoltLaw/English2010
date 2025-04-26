@@ -63,19 +63,19 @@ body {
 } 
 
 #Reagan_Freeman_Container {
-    background-image: url(/assets/photos/basement_TV.jpg);
+    background-image: url(../photos/basement_TV.jpg);
 }
 
 #Fran_Jacquier_Container {
-    background-image: url(/assets/photos/Info_Image_One.jpg);
+    background-image: url(../photos/Info_Image_One.jpg);
 }
 
 #Dodi_Achmad_Container {
-    background-image: url(/assets/photos/Info_Image_Two.jpg);
+    background-image: url(../photos/Info_Image_Two.jpg);
 }
 
 #Vertex_Designs_Container {
-    background-image: url(/assets/photos/CTA_Disconnect_Modifed.png);
+    background-image: url(../photos/CTA_Disconnect_Modifed.png);
 }
 
 
